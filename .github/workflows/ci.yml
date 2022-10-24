@@ -1,7 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
-on: push
+name: Sync Fork
+on:
+  schedule:
+    - cron: '*/10 * * * *' # every 30 minutes
+  workflow_dispatch: # on button click
+  push:
+    branches: [ "main" ]
 jobs:
   update_external_airflow_fork:
     runs-on: ubuntu-latest
