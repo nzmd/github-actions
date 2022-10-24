@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.KR }}
           upstream_repository: KingRan/KR
           target_repository: nzmd/KR
           upstream_branch: main
