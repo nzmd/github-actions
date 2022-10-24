@@ -1,7 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
-
+on: push
 jobs:
   update_external_airflow_fork:
     runs-on: ubuntu-latest
